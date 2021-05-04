@@ -1,3 +1,4 @@
+
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -26,11 +27,15 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chrisdal.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
-
+#
 # Build settings
-theme: jekyll-theme-slate
+theme: minima
 plugins:
   - jekyll-feed
+# For instance, to only link to the about and the portfolio page, add the following to your _config.yml:
+header_pages:
+  - about.markdown
+  - portfolio.markdown
 
 # Exclude from processing.
 # The following items will not be processed, by default.
