@@ -5,8 +5,6 @@
 layout: home
 ---
 
-## About me 
-
 Based next to Grenoble, I am a signal and image processing engineer. I love programming so you will find here some selection of my work. My current programming language are Python and C++, I have also work with bash, Matlab and C. 
 
 

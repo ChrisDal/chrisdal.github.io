@@ -28,6 +28,13 @@ url: "https://chrisdal.github.io/" # the base hostname & protocol for your site,
 #twitter_username: jekyllrb
 github_username:  ChrisDal
 linkedin_username: Maëva DALILA
+
+# Add author 
+author : Maëva DALILA
+
+# New inputs added 
+copyright: ChrisDAL 
+
 #
 # Build settings
 #
