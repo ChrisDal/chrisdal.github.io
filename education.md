@@ -1,6 +1,27 @@
+## Signal and Image processing 
 
-## Education 
+Engineering School : INP-ENSEEIHT (Toulouse, France) 
 
-### Signal and Image processing 
+Graduated in Electronics and Signal Processing
 
-School : INP-ENSEEIHT (Toulouse, France) 
+Specialization : Signal and Image Processing 
+
+Main Courses were : 
++ Statistics 
++ Image Processing 
++ Computer Vision 
++ Machine Learning 
+
+## Internships 
+
+### Deep Learning Intern 
+
+Construction Machineries Recognition on aerial images for [Delair](https://delair.aero). 
+
+Technologies: Tensorflow, Python
+
+### Data Analyst Intern 
+
+Time Series Analysis on Automotive Data for Bradford University (UK).
+
+Technologies: R, Tableau
