@@ -35,7 +35,7 @@ __Competence__: Files Parsing, String
 
 [Code on Github](https://github.com/ChrisDal/CppND-System-Monitor-Project-Updated)
 
-![Monitoring Image](https://github.com/ChrisDal/CppND-System-Monitor-Project-Updated/blob/master/images/monitor-final.png "Result Image")
+![Monitoring Image](./images/monitor-final.png "Result Image")
 
 
 * * *

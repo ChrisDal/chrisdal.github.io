@@ -253,3 +253,105 @@
     }
   }
 }
+
+/**
+ * Cards
+ */
+.card {
+  width: 150px;                 /* Set width of cards */
+  border: 1px solid #5548ff;  /* Set up Border */
+  border-radius: 4px;           /* Slightly Curve edges */
+  overflow: hidden;             /* Fixes the corners */  
+  display: flex;                /* Children use Flexbox */
+  flex-direction: column;       /* Rotate Axis */
+}
+
+
+.card-header {
+  @include relative-font-size(2);
+
+  color: #f7f9ff ;
+  text-align: center;
+  border-bottom: 1px solid #f7f9ff;
+  background-color: $brand-color;
+  padding: 5px 10px;
+}
+
+.card-main {
+  display: flex;              /* Children use Flexbox */
+  flex-direction: column;     /* Rotate Axis to Vertical */
+  justify-content: center;    /* Group Children in Center */
+  align-items: center;        /* Group Children in Center (on cross axis) */
+  padding: 15px 0;            /* Add padding to the top/bottom */
+}
+
+.card-content{
+
+  color: $text-color;
+  padding: $spacing-unit 0;
+  flex: 1;
+  text-align: center;
+}
+
+.card-image{
+  margin-bottom: $spacing-unit;
+  margin-left: $spacing-unit; 
+  margin-right: $spacing-unit;
+}
+
+.container_tags {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .tags {
+    ul {
+      display: flex;
+      li {
+        @include relative-font-size(0.65);
+        letter-spacing: 2px;
+        list-style: none;
+        margin-left: 4px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        //cursor: pointer;
+
+        &:first-child {
+          margin-left: 0px;
+        }
+
+        &:before {
+          content: '';
+          text-align: center;
+          width: 100%;
+          height: 5px;
+          background: $brand-color;
+          opacity: 0.5;
+          position: absolute;
+          bottom: 0;
+          z-index: -1;
+          padding: 0px 1px;
+          -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+          -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+          -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+          -o-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+          transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
+        }
+
+        &:hover:before {
+          height: 18px;
+        }
+      }
+    }
+  }
+}
