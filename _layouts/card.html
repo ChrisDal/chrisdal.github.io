@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<div class="card">
+
+  <div class="card-header">{{page.title}}</div>
+
+  <div class="card-main">
+
+    {%- if page.image -%}
+    <img src={{page.image}} class="card-img"></img> 
+    {%- endif -%}
+
+    <div class="card-content">
+        {{ content }}
+        </div>
+    {%- if page.tags -%}
+    <div class="container_tags"> 
+        <span> tags </span>
+        <div class="tags">
+            <ul>
+            {%- for tag in page.tags -%}
+                <li>{{ tag }}</li>
+            {%- endfor -%}
+            </ul>
+        </div>
+    </div>
+    {%- endif -%}
+
+  </div>
+
+</div>
