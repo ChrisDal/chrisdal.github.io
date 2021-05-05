@@ -254,6 +254,20 @@
   }
 }
 
+
+/* Arrow */
+i {
+  opacity: 0;
+  font-size: 12px;
+  color: $background-color;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+
 /**
  * Cards
  */
@@ -278,11 +292,27 @@
   position: relative;
 
 
+  .fa-arrow-alt-circle-right {
+    z-index: 150;
+    position: absolute;
+    left: 4px;
+    bottom: 2px;
+    font-size: 40px;
+    cursor: pointer;
+  }
+
+
+  &:hover i {
+    opacity: 1;
+    -webkit-transform: scale(20);
+    transform: scale(1);
+  }
+
 
   button {
     position: absolute;
-    bottom: 2px;
-    left: 2px;
+    bottom: 0px;
+    left: 4px;
     width: 30px;
     height: 30px;
     background-color: $cpp-color;
@@ -300,7 +330,7 @@
   }
   
   &:hover button {
-    transform: scale(21.0);
+    transform: scale(23.0);
   }
 
 
@@ -318,7 +348,7 @@
   justify-content: center;    /* Group Children in Center */
   align-items: center;        /* Group Children in Center (on cross axis) */
   padding: 0px 0;            /* Add padding to the top/bottom */
-  border-right: 3px solid #1245dd;
+  border-right: 3px solid $cpp-color;
 }
 
 .card-header {
@@ -330,6 +360,9 @@
   padding: 5px 5px;
 }
 
+
+
+
 .card-main {
   background-color: #f7f9ff;
   display: flex;              /* Children use Flexbox */
@@ -337,6 +370,8 @@
   padding: $spacing-unit 0;            /* Add padding to the top/bottom */
   box-sizing: border-box;
   position: relative;
+
+
 
 }
 
@@ -413,3 +448,6 @@
 }
 
 
+/* Modal 
+**
+*/
