@@ -3,31 +3,54 @@ layout: default
 ---
 
 <div class="card">
+  <div class="card-left">
+  
+    <div class="card-header">{{page.title}}</div>
+  </div>
+  <button></button>
 
-  <div class="card-header">{{page.title}}</div>
-
+  <a href="#modal-opened" class="link-1" id="modal-closed">
+    <i class="far fa-arrow-alt-circle-right"></i>
+  </a>
   <div class="card-main">
-
-    {%- if page.image -%}
-    <img src={{page.image}} class="card-img"></img> 
-    {%- endif -%}
-
+    
     <div class="card-content">
-        {{ content }}
-        </div>
+      {{ content }}
+    </div>
+
+
+
     {%- if page.tags -%}
     <div class="container_tags"> 
-        <span> tags </span>
-        <div class="tags">
-            <ul>
-            {%- for tag in page.tags -%}
-                <li>{{ tag }}</li>
-            {%- endfor -%}
-            </ul>
-        </div>
+      <span> tags </span>
+      <div class="tags">
+        <ul>
+
+        {%- for tag in page.tags -%}
+            <li>{{ tag }}</li>
+        {%- endfor -%}
+        </ul>
+      </div>
     </div>
     {%- endif -%}
+ 
+  </div>
+</div>
+
+
+<div class="modal-container" id="modal-opened">
+  <div class="modal">
+
+    <div class="modal__details">
+      <h1 class="modal__title">Modal Title</h1>
+      <p class="modal__description">Sentence that will tell user what this modal is for or something.</p>
+    </div>
+
+    <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
+
+    <button class="modal__btn">Button &rarr;</button>
+
+    <a href="#modal-closed" class="link-2"></a>
 
   </div>
-
 </div>
