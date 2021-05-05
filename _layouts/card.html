@@ -3,13 +3,13 @@ layout: default
 ---
 
 <div class="card">
-  
   <div class="card-left">
   
     <div class="card-header">{{page.title}}</div>
   </div>
   <button></button>
-  <a href={% link index.markdown %}> 
+
+  <a href="#modal-opened" id="modal-closed">
     <i class="far fa-arrow-alt-circle-right"></i>
   </a>
   <div class="card-main">
@@ -35,6 +35,22 @@ layout: default
     {%- endif -%}
  
   </div>
-  
+</div>
 
+
+<div class="modal-container" id="modal-opened">
+  <div class="modal">
+
+    <div class="modal__details">
+      <h1 class="modal__title">Modal Title</h1>
+      <p class="modal__description">Sentence that will tell user what this modal is for or something.</p>
+    </div>
+
+    <p class="modal__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis ex dicta maiores libero minus obcaecati iste optio, eius labore repellendus.</p>
+
+    <button class="modal__btn">Button &rarr;</button>
+
+    <a href="#modal-closed"></a>
+
+  </div>
 </div>
