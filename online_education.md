@@ -1,7 +1,9 @@
 ## Online Education 
 
 __Name__: C++ Nanodegree Program
+
 __Plateform__: Udacity 
+
 __Status__: In progress
 
 All the projects can be found under [C++ project page](./projects_cpp.md)
@@ -29,7 +31,9 @@ Capstone
 * * * 
 
 __Name__: Game Design: Art and Concepts par California Institute of the Arts 
+
 __Plateform__: Coursera 
+
 __Status__: Finished
 
 [Certificate](https://coursera.org/verify/specialization/A29S7HHEZ9W9)
@@ -69,5 +73,6 @@ Some Example of my work:
 
 #### Game Design Document: Define the Art & Concepts
 
-I applied the capstone-project of making a game design document on my project [9Lives](./projects_cpp.md) 
+I applied the capstone-project of making a game design document on my project [9Lives](./projects_cpp.md). 
+
 Results can be found on these slides: [Game Design Document](https://drive.google.com/file/d/1O0Ac06Ke82EVLZGDs-N7JoixQQ94ngwD/view?usp=sharing)

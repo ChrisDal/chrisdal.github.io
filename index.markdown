@@ -36,4 +36,12 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 [Projects Examples in Python](./projects_python.md)
 
 
+### Others Skills 
+
+- C++ 
+- Python 
+- Matlab 
+- Bash 
+- Deep Learning 
+
 
