@@ -258,100 +258,158 @@
  * Cards
  */
 .card {
-  width: 150px;                 /* Set width of cards */
+
+  @include media-query($on-palm) {
+    .wrapper {
+      padding-right: $spacing-unit / 2;
+      padding-left: $spacing-unit / 2;
+    }
+  }
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
   border: 1px solid #5548ff;  /* Set up Border */
   border-radius: 4px;           /* Slightly Curve edges */
   overflow: hidden;             /* Fixes the corners */  
   display: flex;                /* Children use Flexbox */
-  flex-direction: column;       /* Rotate Axis */
+  flex-direction: row;          /* Rotate Axis */
+
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  position: relative;
+
+
+
+  button {
+    position: absolute;
+    bottom: 2px;
+    left: 2px;
+    width: 30px;
+    height: 30px;
+    background-color: $cpp-color;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    outline:none;
+    transition: all 0.3s ease;
+    mix-blend-mode: soft-light;
+    z-index: 100;
+  
+    i {
+      font-size: 3rem;
+    }
+  }
+  
+  &:hover button {
+    transform: scale(21.0);
+  }
+
+
 }
 
+.card:hover{
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 
-.card-header {
-  @include relative-font-size(2);
-
-  color: #f7f9ff ;
-  text-align: center;
-  border-bottom: 1px solid #f7f9ff;
+.card-left{
   background-color: $brand-color;
-  padding: 5px 10px;
-}
 
-.card-main {
   display: flex;              /* Children use Flexbox */
   flex-direction: column;     /* Rotate Axis to Vertical */
   justify-content: center;    /* Group Children in Center */
   align-items: center;        /* Group Children in Center (on cross axis) */
-  padding: 15px 0;            /* Add padding to the top/bottom */
+  padding: 0px 0;            /* Add padding to the top/bottom */
+  border-right: 3px solid #1245dd;
+}
+
+.card-header {
+  @include relative-font-size(1.2);
+  color: #f7f9ff ;
+  text-align: center;
+  writing-mode: sideways-lr; 
+  text-orientation: sideways;
+  padding: 5px 5px;
+}
+
+.card-main {
+  background-color: #f7f9ff;
+  display: flex;              /* Children use Flexbox */
+  flex-direction: column;     /* Rotate Axis to Vertical */
+  padding: $spacing-unit 0;            /* Add padding to the top/bottom */
+  box-sizing: border-box;
+  position: relative;
+
 }
 
 .card-content{
-
+  h1 {
+    @include relative-font-size(1.2);
+    font-weight: bold;
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.125);
+    }
+  }
+  
   color: $text-color;
-  padding: $spacing-unit 0;
+  padding: 4px;
   flex: 1;
   text-align: center;
+  justify-content: center;    /* Group Children in Center */
+  align-items: center;        /* Group Children in Center (on cross axis) */
+
 }
 
-.card-image{
-  margin-bottom: $spacing-unit;
-  margin-left: $spacing-unit; 
-  margin-right: $spacing-unit;
-}
 
 .container_tags {
   display: flex;
   flex-direction: column;
+  text-align: right;
+  justify-content: right;    /* Group Children in Center */
+  align-items: right;        /* Group Children in Center (on cross axis) */
+  vertical-align: text-bottom;
+  position: absolute;
+  bottom : 0px;
+  width : 100%;
 
   span {
-    font-size: 12px;
+    @include relative-font-size(0.7);
     text-transform: uppercase;
     opacity: 0.5;
     letter-spacing: 1px;
     font-weight: bold;
+    margin-right: 4px;
   }
 
   .tags {
     ul {
       display: flex;
+      justify-content: right;    /* Group Children in Center */
+      align-items: right;        /* Group Children in Center (on cross axis) */
+      text-align: right;
+      margin-right: 4px;
+      
       li {
         @include relative-font-size(0.65);
         letter-spacing: 2px;
         list-style: none;
         margin-left: 4px;
+        padding-left: 4px;
+        padding-right: 4px;
         text-transform: uppercase;
         position: relative;
         z-index: 1;
         display: flex;
         justify-content: center;
+        background-color: $brand-color;
+        color: #f7f9ff ;
+        border-radius: 2px;
         //cursor: pointer;
 
         &:first-child {
           margin-left: 0px;
         }
-
-        &:before {
-          content: '';
-          text-align: center;
-          width: 100%;
-          height: 5px;
-          background: $brand-color;
-          opacity: 0.5;
-          position: absolute;
-          bottom: 0;
-          z-index: -1;
-          padding: 0px 1px;
-          -webkit-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
-          -moz-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
-          -ms-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
-          -o-transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
-          transition: cubic-bezier(0.68, -0.55, 0.27, 01.55) 320ms;
-        }
-
-        &:hover:before {
-          height: 18px;
-        }
       }
     }
   }
 }
+
+

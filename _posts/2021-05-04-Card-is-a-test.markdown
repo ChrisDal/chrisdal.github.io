@@ -1,10 +1,11 @@
 ---
 layout: card
-title:  Future Card
+title:  C++
 date:   2021-05-03 20:30:35 +0200
 categories: cpp
-image: /images/test_user_512x512.png
-tags: test, cpp
+tags: game sfml
 ---
 
-This the card Content. Meet John Doe.
+# This the card content
+
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
