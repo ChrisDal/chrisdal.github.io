@@ -13,10 +13,12 @@ Based next to Grenoble, I am a signal and image processing engineer. I love prog
 
 I graduated from INP-ENSEEIHT in 2017, in Electronics and Signal Processing, specialized in Signal and Image Processing. 
 
-[More...](./Education.md)
+[Engineering School](./Education.md)
+
+[Online Education](./online_education.md)
 
 
-## Projects
+## Projects 
 
 
 
@@ -24,16 +26,14 @@ I graduated from INP-ENSEEIHT in 2017, in Electronics and Signal Processing, spe
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
 
-[Projects Examples in C++](./portefolio.md)
-
+[Projects Examples in C++](./projects_cpp.md)
 
 
 ### Python 
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
-### Matlab  
+[Projects Examples in Python](./projects_python.md)
 
-### Coding Game 
 
-Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?
+
