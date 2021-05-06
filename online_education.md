@@ -36,7 +36,7 @@ __Plateform__: Coursera
 
 __Status__: Finished
 
-[Certificate](https://coursera.org/verify/specialization/A29S7HHEZ9W9)
+[Certificate](https://coursera.org/verify/specialization/A29S7HHEZ9W9){:target="_blank" rel="noreferrer noopener"}
 
 This specialization is composed of 5 courses:
 1. Introduction to Game Design 
@@ -73,6 +73,6 @@ Some Example of my work:
 
 #### Game Design Document: Define the Art & Concepts
 
-I applied the capstone-project of making a game design document on my project [9Lives](./projects_cpp.md). 
+I applied the capstone-project of making a game design document on my project [9Lives](./projects_cpp.md){:target="_blank" rel="noreferrer noopener"}. 
 
-Results can be found on these slides: [Game Design Document](https://drive.google.com/file/d/1O0Ac06Ke82EVLZGDs-N7JoixQQ94ngwD/view?usp=sharing)
+Results can be found on these slides: [Game Design Document](https://drive.google.com/file/d/1O0Ac06Ke82EVLZGDs-N7JoixQQ94ngwD/view?usp=sharing){:target="_blank" rel="noreferrer noopener"}

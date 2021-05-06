@@ -47,6 +47,25 @@ header_pages:
   - about.markdown
   - contact.md
 
+collections:
+  education:
+    output: true
+  progprojects:
+    output: true
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "education"
+    values:
+      layout: "card_modal"
+  - scope:
+      path: ""
+      type: "progprojects"
+    values:
+      layout: "card_modal"
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

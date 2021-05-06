@@ -255,11 +255,26 @@
 }
 
 
+
+
+/* Grid Cards */
+.wrapper-grid-card{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-rows: 1fr;
+  grid-gap: 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+
 /* Arrow */
 i {
   opacity: 0;
   font-size: 12px;
-  color: $background-color;
+  color: $cpp-color;
   will-change: transform;
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
@@ -267,26 +282,21 @@ i {
   transition: all 0.25s ease;
 }
 
-
 /**
  * Cards
+ *
+ *width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+ * width:         calc(50% - (#{$spacing-unit} / 2));
  */
 .card {
-
-  @include media-query($on-palm) {
-    .wrapper {
-      padding-right: $spacing-unit / 2;
-      padding-left: $spacing-unit / 2;
-    }
-  }
-  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-  width:         calc(50% - (#{$spacing-unit} / 2));
-  border: 1px solid #5548ff;  /* Set up Border */
+  border: 1px solid #2D3D7A;  /* Set up Border */
   border-radius: 4px;           /* Slightly Curve edges */
   overflow: hidden;             /* Fixes the corners */  
   display: flex;                /* Children use Flexbox */
   flex-direction: row;          /* Rotate Axis */
 
+  width: 100%;
+  height: 160px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   position: relative;
@@ -295,9 +305,9 @@ i {
   .fa-arrow-alt-circle-right {
     z-index: 5;
     position: absolute;
-    left: 4px;
-    bottom: 2px;
-    font-size: 40px;
+    right: 4px;
+    top: 2px;
+    font-size: 30px;
     cursor: pointer;
   }
 
@@ -311,17 +321,17 @@ i {
 
   button {
     position: absolute;
-    bottom: 0px;
-    left: 4px;
+    top: 0px;
+    right: 4px;
     width: 30px;
     height: 30px;
-    background-color: $cpp-color;
+    background-color: $cpp-color-dark;
     border: none;
     border-radius: 30px;
     cursor: pointer;
     outline:none;
     transition: all 0.3s ease;
-    mix-blend-mode: soft-light;
+    mix-blend-mode: overlay;
     z-index: 4;
   
     i {
@@ -330,7 +340,7 @@ i {
   }
   
   &:hover button {
-    transform: scale(23.0);
+    transform: scale(22);
   }
 
 
@@ -347,20 +357,25 @@ i {
   flex-direction: column;     /* Rotate Axis to Vertical */
   justify-content: center;    /* Group Children in Center */
   align-items: center;        /* Group Children in Center (on cross axis) */
-  padding: 0px 0;            /* Add padding to the top/bottom */
-  border-right: 3px solid $cpp-color;
+  padding: 2px 0;            /* Add padding to the top/bottom */
+  border-right: 3px solid #ffffff;
 }
 
 .card-header {
-  @include relative-font-size(1.2);
+  @include relative-font-size(1.15);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.15);
+  }
+  @include media-query($on-palm) {
+    @include relative-font-size(1.0);
+  }
   color: #f7f9ff ;
   text-align: center;
   writing-mode: sideways-lr; 
   text-orientation: sideways;
-  padding: 5px 5px;
+  padding: 3px 3px;
+  word-wrap: break-word;
 }
-
-
 
 
 .card-main {
@@ -368,11 +383,9 @@ i {
   display: flex;              /* Children use Flexbox */
   flex-direction: column;     /* Rotate Axis to Vertical */
   padding: $spacing-unit 0;            /* Add padding to the top/bottom */
+  width: 100%;
   box-sizing: border-box;
   position: relative;
-
-
-
 }
 
 .card-content{
@@ -381,6 +394,9 @@ i {
     font-weight: bold;
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
+    }
+    @include media-query($on-palm) {
+      @include relative-font-size(0.8);
     }
   }
   
@@ -411,7 +427,7 @@ i {
     opacity: 0.5;
     letter-spacing: 1px;
     font-weight: bold;
-    margin-right: 4px;
+    margin-right: 5px;
   }
 
   .tags {
@@ -422,6 +438,19 @@ i {
       text-align: right;
       margin-right: 4px;
       
+
+      li[tag-type="c++"] {
+        background-color : $cpp-color;
+      }
+      
+      li[tag-type="python"] {
+        background-color : $python-color;
+      }
+
+      li[tag-type="datascience"] {
+        background-color: $grey-color-dark;
+      }
+
       li {
         @include relative-font-size(0.65);
         letter-spacing: 2px;
@@ -434,15 +463,16 @@ i {
         z-index: 1;
         display: flex;
         justify-content: center;
-        background-color: $brand-color;
+        background-color: $grey-color;
         color: #f7f9ff ;
         border-radius: 2px;
-        //cursor: pointer;
-
+        
         &:first-child {
           margin-left: 0px;
         }
       }
+
+
     }
   }
 }
@@ -467,11 +497,16 @@ Abubaker Saeed  *
   height: 100%;
 
   background: $background-color;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  
 }
 
 /* using :target */
 .modal-container:target {
   display: flex;
+
 }
 
 .modal {
@@ -480,17 +515,15 @@ Abubaker Saeed  *
   border-radius: .8rem;
 
   color: #ffff ;
-  background: linear-gradient(to right bottom, hsl(236, 50%, 50%), hsl(195, 50%, 50%));
+  background: linear-gradient(to right bottom, hsl(237, 93%, 84%), hsl(195, 89%, 72%));
   box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, 0.3);
   position: relative;
-  overflow: hidden;
 }
 
 .modal__details {
   text-align: center;
-
-  margin-bottom: 4rem;
-  padding-bottom: 4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid hsla(0, 0%, 100%, .4);
 }
 
@@ -509,6 +542,7 @@ Abubaker Saeed  *
   padding: 0 4rem;
   margin-bottom: 4rem;
 }
+
 
 .modal__text::before {
   content: '';
@@ -539,6 +573,10 @@ Abubaker Saeed  *
 
   transition: .2s;
   cursor: pointer;
+
+  position: absolute; 
+  bottom: 1rem; 
+  right: 1.5rem;
 }
 
 .modal__btn:hover,
@@ -553,8 +591,8 @@ Abubaker Saeed  *
 */
 
 .link-2 {
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   border: 1px solid hsla(0, 0%, 100%, .4);
   border-radius: 100rem;
 
@@ -562,8 +600,8 @@ Abubaker Saeed  *
   font-size: 2.2rem;
 
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 1rem;
+  right: 1rem;
 
   display: flex;
   justify-content: center;
@@ -581,4 +619,5 @@ Abubaker Saeed  *
 .link-2:focus {
   border-color: hsla(0, 0%, 100%, .6);
   transform: translateY(-.2rem);
+  text-decoration: none;
 }

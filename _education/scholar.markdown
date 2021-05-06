@@ -1,10 +1,15 @@
-## Signal and Image processing 
+---
+layout: card_modal
+title:  Education
+header: Engineering School
+date:   2021-05-05 13:28:35 +0200
+categories: education
+tags: image signal
+modal_title: INP-ENSEEIHT (Toulouse)
+objective: Signal and Image Processing
+---
 
-Engineering School : INP-ENSEEIHT (Toulouse, France) 
-
-Graduated in Electronics and Signal Processing
-
-Specialization : Signal and Image Processing 
+Graduated in Electronics and Signal Processing specialized in Signal and Image Processing 
 
 Main Courses were : 
 + Statistics 
