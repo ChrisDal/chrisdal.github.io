@@ -13,25 +13,20 @@ layout: default
 
   <div> {{ page.sections['education'] | textilize }} </div>
 
-
+  <div class="wrapper-grid-card"> 
   {%- for educ in site.education -%}
-  <li>
     {{educ}}
-  </li>
   {%- endfor -%}
+  </div>
 
-  <div class="wrapper-grid-card"> </div>
-
-  <h2> Projects </h2>
+  <h2> Projects </h2> 
 
   <div> {{ page.sections['projects'] | textilize }} </div>
 
   
   <div class="wrapper-grid-card"> 
   {%- for proj in site.progprojects -%}
-  
     {{proj}}
- 
   {%- endfor -%}
   </div>
 
