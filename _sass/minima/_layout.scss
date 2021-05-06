@@ -259,7 +259,7 @@
 i {
   opacity: 0;
   font-size: 12px;
-  color: $background-color;
+  color: $brand-color;
   will-change: transform;
   -webkit-transform: scale(0.1);
   transform: scale(0.1);
@@ -295,9 +295,9 @@ i {
   .fa-arrow-alt-circle-right {
     z-index: 5;
     position: absolute;
-    left: 4px;
-    bottom: 2px;
-    font-size: 40px;
+    right: 4px;
+    top: 2px;
+    font-size: 30px;
     cursor: pointer;
   }
 
@@ -311,8 +311,8 @@ i {
 
   button {
     position: absolute;
-    bottom: 0px;
-    left: 4px;
+    top: 0px;
+    right: 4px;
     width: 30px;
     height: 30px;
     background-color: $cpp-color;
@@ -321,7 +321,7 @@ i {
     cursor: pointer;
     outline:none;
     transition: all 0.3s ease;
-    mix-blend-mode: soft-light;
+    mix-blend-mode: overlay;
     z-index: 4;
   
     i {
@@ -330,7 +330,7 @@ i {
   }
   
   &:hover button {
-    transform: scale(23.0);
+    transform: scale(22.8);
   }
 
 
@@ -581,4 +581,5 @@ Abubaker Saeed  *
 .link-2:focus {
   border-color: hsla(0, 0%, 100%, .6);
   transform: translateY(-.2rem);
+  text-decoration: none;
 }

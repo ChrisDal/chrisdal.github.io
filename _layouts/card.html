@@ -7,19 +7,14 @@ layout: default
   
     <div class="card-header">{{page.title}}</div>
   </div>
-  <button></button>
+  
 
-  <a href="#modal-opened" class="link-1" id="modal-closed">
-    <i class="far fa-arrow-alt-circle-right"></i>
-  </a>
+  
   <div class="card-main">
     
     <div class="card-content">
       {{ content }}
     </div>
-
-
-
     {%- if page.tags -%}
     <div class="container_tags"> 
       <span> tags </span>
@@ -35,6 +30,12 @@ layout: default
     {%- endif -%}
  
   </div>
+
+  <a href="#modal-opened" class="link-1" id="modal-closed">
+    <button></button>
+    <i class="far fa-arrow-alt-circle-right"></i>
+  </a>
+
 </div>
 
 
