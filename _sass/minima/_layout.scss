@@ -260,13 +260,14 @@
 /* Grid Cards */
 .wrapper-grid-card{
   display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(200px, 1fr));
   grid-template-rows: 1fr;
-  grid-gap: 0.5rem;
+  grid-gap: 1rem;
   box-sizing: border-box;
   width: 100%;
   padding: 0px;
-  margin: 0px;
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
 }
 
 /* Arrow */
@@ -361,9 +362,9 @@ i {
 }
 
 .card-header {
-  @include relative-font-size(1.2);
+  @include relative-font-size(1.15);
   @include media-query($on-laptop) {
-    @include relative-font-size(1.2);
+    @include relative-font-size(1.15);
   }
   @include media-query($on-palm) {
     @include relative-font-size(1.0);
@@ -372,7 +373,7 @@ i {
   text-align: center;
   writing-mode: sideways-lr; 
   text-orientation: sideways;
-  padding: 5px 5px;
+  padding: 3px 3px;
   word-wrap: break-word;
 }
 
@@ -426,7 +427,7 @@ i {
     opacity: 0.5;
     letter-spacing: 1px;
     font-weight: bold;
-    margin-right: 4px;
+    margin-right: 5px;
   }
 
   .tags {
@@ -437,6 +438,19 @@ i {
       text-align: right;
       margin-right: 4px;
       
+
+      li[tag-type="c++"] {
+        background-color : $cpp-color;
+      }
+      
+      li[tag-type="python"] {
+        background-color : $python-color;
+      }
+
+      li[tag-type="datascience"] {
+        background-color: $grey-color-dark;
+      }
+
       li {
         @include relative-font-size(0.65);
         letter-spacing: 2px;
@@ -449,15 +463,16 @@ i {
         z-index: 1;
         display: flex;
         justify-content: center;
-        background-color: $brand-color;
+        background-color: $grey-color;
         color: #f7f9ff ;
         border-radius: 2px;
-        //cursor: pointer;
-
+        
         &:first-child {
           margin-left: 0px;
         }
       }
+
+
     }
   }
 }

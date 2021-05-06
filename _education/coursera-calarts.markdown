@@ -4,7 +4,7 @@ title:  Online Education
 header: Coursera 
 date:   2021-05-05 13:28:35 +0200
 categories: education
-tags: c++ 
+tags: game design
 refersto: /pages/card-test.md
 modal_title: "Game Design: Art and Concepts par California Institute of the Arts"
 objective: Fundations of Game Design

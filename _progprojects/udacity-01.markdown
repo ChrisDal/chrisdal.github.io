@@ -1,7 +1,7 @@
 ---
 layout: card_modal
 title:  C++
-header: Udacity Nanodegree
+header: "Udacity Nanodegree: System Monitor"
 date:   2021-05-05 13:28:35 +0200
 tags: c++
 refersto: /pages/card-test.md

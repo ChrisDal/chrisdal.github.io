@@ -22,7 +22,7 @@ layout: nav_cards
         <ul>
 
         {%- for tag in page.tags -%}
-            <li>{{ tag }}</li>
+            <li tag-type="{{tag}}">{{ tag }}</li>
         {%- endfor -%}
         </ul>
       </div>

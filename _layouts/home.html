@@ -7,11 +7,11 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  <div>{{ page.sections['intro'] | textilize }}</div>
+  <div>{{ page.sections['intro'] | markdownify }}</div>
 
   <h2> Education </h2>
 
-  <div> {{ page.sections['education'] | textilize }} </div>
+  <div> {{ page.sections['education'] | markdownify }} </div>
 
   <div class="wrapper-grid-card"> 
   {%- for educ in site.education -%}
@@ -20,8 +20,7 @@ layout: default
   </div>
 
   <h2> Projects </h2> 
-
-  <div> {{ page.sections['projects'] | textilize }} </div>
+  <div> {{ page.sections['projects'] | markdownify }} </div>
 
   
   <div class="wrapper-grid-card"> 
@@ -30,7 +29,14 @@ layout: default
   {%- endfor -%}
   </div>
 
+  <h2> Skills </h2> 
+  <div> <ul>
+  {%- for skill in page.sections['others'] -%}
+    <li>{{ skill | markdownify }}</li>
+  {%- endfor -%}
+  </ul>
+  </div>
 
-  <div> {{ content }} </div>
+  {{ content }}
 
 </div>
