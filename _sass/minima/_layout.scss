@@ -347,12 +347,18 @@ i {
   flex-direction: column;     /* Rotate Axis to Vertical */
   justify-content: center;    /* Group Children in Center */
   align-items: center;        /* Group Children in Center (on cross axis) */
-  padding: 0px 0;            /* Add padding to the top/bottom */
+  padding: 2px 0;            /* Add padding to the top/bottom */
   border-right: 3px solid $cpp-color;
 }
 
 .card-header {
   @include relative-font-size(1.2);
+  @include media-query($on-laptop) {
+    @include relative-font-size(1.2);
+  }
+  @include media-query($on-palm) {
+    @include relative-font-size(1.0);
+  }
   color: #f7f9ff ;
   text-align: center;
   writing-mode: sideways-lr; 
@@ -361,18 +367,14 @@ i {
 }
 
 
-
-
 .card-main {
   background-color: #f7f9ff;
   display: flex;              /* Children use Flexbox */
   flex-direction: column;     /* Rotate Axis to Vertical */
   padding: $spacing-unit 0;            /* Add padding to the top/bottom */
+  width: 100%;
   box-sizing: border-box;
   position: relative;
-
-
-
 }
 
 .card-content{
@@ -381,6 +383,9 @@ i {
     font-weight: bold;
     @include media-query($on-laptop) {
       @include relative-font-size(1.125);
+    }
+    @include media-query($on-palm) {
+      @include relative-font-size(0.8);
     }
   }
   

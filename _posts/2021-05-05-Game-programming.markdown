@@ -1,9 +1,16 @@
 ---
-layout: page
-title: Ubisoft Womxn Programming
+layout: card_modal
+title:  C++
+header: Game Programming 
+date:   2021-05-05 13:28:35 +0200
+categories: cpp
+tags: game sfml
+refersto: /pages/card-test.md
+modal_title: Ubisoft Womxn Programming
 objective: Programming a game with SFML and ImGui in C++
 gh_link: https://github.com/ChrisDal/ubiwmxn-game/tree/v2.21
 ---
+
 
 > WomXn Develop At Ubisoft is a mentoring program that aims to attract and develop diverse talents for Ubisoft studios around the world.
 
