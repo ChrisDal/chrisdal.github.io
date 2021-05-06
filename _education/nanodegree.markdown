@@ -5,7 +5,6 @@ header: Udacity C++ Nanodegree Program
 date:   2021-05-05 13:28:35 +0200
 categories: education
 tags: c++ 
-refersto: /pages/card-test.md
 modal_title: C++ Nanodegree Program
 objective: Basic and Advanced modern C++ 
 gh_link: https://github.com/ChrisDal/

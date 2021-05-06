@@ -5,10 +5,10 @@ header: Coursera
 date:   2021-05-05 13:28:35 +0200
 categories: education
 tags: game design
-refersto: /pages/card-test.md
 modal_title: "Game Design: Art and Concepts par California Institute of the Arts"
 objective: Fundations of Game Design
 button_name: See Certificate
+gh_name: Coursera
 gh_link: https://coursera.org/verify/specialization/A29S7HHEZ9W9
 ---
 

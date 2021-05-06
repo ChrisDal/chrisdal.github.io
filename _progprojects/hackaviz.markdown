@@ -7,6 +7,7 @@ tags: python datascience
 refersto: /pages/card-test.md
 modal_title: Hackaviz 2020 
 objective: Analyze data of tourism in Occitanie (France) in a limited time
+gh_name: Website
 gh_link: https://sites.google.com/view/datanoob/accueil
 ---
 > Raconter une histoire avec des graphiques, à partir d’un jeu de données inédit, seul ou en équipe. Les candidats ont 10 jours pour rendre leur création.

@@ -5,7 +5,6 @@ header: Engineering School
 date:   2021-05-05 13:28:35 +0200
 categories: education
 tags: image signal
-refersto: /pages/card-test.md
 modal_title: INP-ENSEEIHT (Toulouse)
 objective: Signal and Image Processing
 ---

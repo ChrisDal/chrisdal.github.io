@@ -51,7 +51,11 @@ layout: nav_cards
       
       {%- if page.gh_link -%}
       <a href={{ page.gh_link }} target="_blank" rel="noreferrer noopener" >
+        {%- if page.gh_name -%}
+        <button class="modal__btn">See on {{ page.gh_name }} &rarr;</button>
+        {%- else -%}
         <button class="modal__btn">See on Github &rarr;</button>
+        {%- endif -%}
       </a>
       {%- endif -%}
   

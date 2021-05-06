@@ -4,9 +4,9 @@ title:  Coding Game
 header: Algorithms Challenge
 date:   2021-05-05 13:28:35 +0200
 tags: python c++
-refersto: /pages/card-test.md
 modal_title: Coding Game
 objective: Application of several algorithms
+gh_name: CodingGame
 gh_link: https://www.codingame.com/profile/5cef3877e7acdeb8eef3eb81de3122579039901
 ---
 
