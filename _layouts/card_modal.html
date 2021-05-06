@@ -52,7 +52,9 @@ layout: default
       </p>
       
       {%- if page.gh_link -%}
-      <button class="modal__btn">See on Github &rarr;</button>
+      <a href={{ page.gh_link }} target="_blank" rel="noreferrer noopener" >
+        <button class="modal__btn">See on Github &rarr;</button>
+      </a>
       {%- endif -%}
   
       <a href="#modal-closed" class="link-2"></a>

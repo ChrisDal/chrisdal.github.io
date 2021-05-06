@@ -15,7 +15,7 @@ __Objective__: Analyze data of tourism in Occitanie (France) in a limited time
 __Technologies__: Tableau, Matplotlib, Numpy, Python 
 
 
-[Le tourisme dans la région occitanie en 2018](https://sites.google.com/view/datanoob/accueil)
+[Le tourisme dans la région occitanie en 2018](https://sites.google.com/view/datanoob/accueil){:target="_blank" rel="noreferrer noopener"}
 
 Personal contribution : I search for some primary correlation in the data with Tableau, then we can define the main axis of our storytelling. I realized the Occitanie Map Per Week that represents the flux to a focused Occitanie department and analysis. 
 
@@ -26,7 +26,7 @@ Personal contribution : I search for some primary correlation in the data with T
 
 As I needed to flag difficult data for neural-network training, I added a difficult option to the open-source tool I was using. 
 
-[Participation](https://github.com/tzutalin/labelImg/pull/80)
+[Participation](https://github.com/tzutalin/labelImg/pull/80){:target="_blank" rel="noreferrer noopener"}
 
 ## Coding Game 
 
@@ -34,4 +34,4 @@ As I needed to flag difficult data for neural-network training, I added a diffic
 
 I practice on problems submitted on Coding Game with Python and C++, applied several algorithms as binary search, Monte-Carlo Search Tree...
 
-See My Coding Game Profile [here](https://www.codingame.com/profile/5cef3877e7acdeb8eef3eb81de3122579039901)
+See My Coding Game Profile [here](https://www.codingame.com/profile/5cef3877e7acdeb8eef3eb81de3122579039901){:target="_blank" rel="noreferrer noopener"}

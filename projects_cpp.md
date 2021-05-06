@@ -15,11 +15,11 @@ __Technologies__:
 + ImGui : Graphical User Interface for C++ [[lien github](https://github.com/ocornut/imgui)]
 
 
-[Simple Game Design Document](https://drive.google.com/file/d/1O0Ac06Ke82EVLZGDs-N7JoixQQ94ngwD/view?usp=sharing)
+[Simple Game Design Document](https://drive.google.com/file/d/1O0Ac06Ke82EVLZGDs-N7JoixQQ94ngwD/view?usp=sharing){:target="_blank" rel="noreferrer noopener"}
 
 In Game Gif.
 
-Code can be found on my github : [9LIVES](https://github.com/ChrisDal/ubiwmxn-game/tree/v2.21) 
+Code can be found on my github : [9LIVES](https://github.com/ChrisDal/ubiwmxn-game/tree/v2.21){:target="_blank" rel="noreferrer noopener"}
 
 
 
@@ -33,7 +33,7 @@ __Objective__: Monitoring a Linux System
 
 __Competence__: Files Parsing, String  
 
-[Code on Github](https://github.com/ChrisDal/CppND-System-Monitor-Project-Updated)
+[Code on Github](https://github.com/ChrisDal/CppND-System-Monitor-Project-Updated){:target="_blank" rel="noreferrer noopener"}
 
 ![Monitoring Image](./images/monitor-final.png "Result Image")
 
@@ -47,7 +47,7 @@ __Objective__: Determine the shortest path from a point A to B on a open-street 
 
 __Competence__: Path Finding 
 
-[Code on Github](https://github.com/ChrisDal/CppND-Route-Planning-Project/tree/master/src) 
+[Code on Github](https://github.com/ChrisDal/CppND-Route-Planning-Project/tree/master/src){:target="_blank" rel="noreferrer noopener"} 
 
 
 * * *
