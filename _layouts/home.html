@@ -7,28 +7,35 @@ layout: default
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
 
-  {{ content }}
+  <div>{{ page.sections['intro'] | textilize }}</div>
 
-  {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <span class="post-meta">{{ post.date | date: date_format }}</span>
-        <h3>
-          <a class="post-link" href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
-          </a>
-        </h3>
-        {%- if site.show_excerpts -%}
-          {{ post.excerpt }}
-        {%- endif -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+  <h2> Education </h2>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
-  {%- endif -%}
+  <div> {{ page.sections['education'] | textilize }} </div>
+
+
+  {%- for educ in site.education -%}
+  <li>
+    {{educ}}
+  </li>
+  {%- endfor -%}
+
+  <div class="wrapper-grid-card"> </div>
+
+  <h2> Projects </h2>
+
+  <div> {{ page.sections['projects'] | textilize }} </div>
+
+  
+  <div class="wrapper-grid-card"> 
+  {%- for proj in site.progprojects -%}
+  
+    {{proj}}
+ 
+  {%- endfor -%}
+  </div>
+
+
+  <div> {{ content }} </div>
 
 </div>

@@ -3,8 +3,7 @@ layout: card_modal
 title:  C++
 header: Game Programming 
 date:   2021-05-05 13:28:35 +0200
-categories: cpp
-tags: game sfml
+tags: game c++
 refersto: /pages/card-test.md
 modal_title: Ubisoft Womxn Programming
 objective: Programming a game with SFML and ImGui in C++

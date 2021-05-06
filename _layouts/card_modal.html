@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: nav_cards
 ---
 
 <div class="card">
@@ -7,8 +7,6 @@ layout: default
   <div class="card-left">
     <div class="card-header">{{page.title}}</div>
   </div>
-
-
 
   <div class="card-main">
     
@@ -31,15 +29,15 @@ layout: default
     </div>
     {%- endif -%}
   </div>
-
-  <a href="#modal-opened" class="link-1" id="modal-closed">
+  
+  <a href="#modal-opened-{{page.slug}}" class="link-1" id="modal-closed-{{page.slug}}">
     <button></button>
     <i class="far fa-arrow-alt-circle-right"></i>
   </a>
 
 </div>
 
-<div class="modal-container" id="modal-opened">
+<div class="modal-container" id="modal-opened-{{page.slug}}">
     <div class="modal">
   
       <div class="modal__details">
@@ -57,7 +55,7 @@ layout: default
       </a>
       {%- endif -%}
   
-      <a href="#modal-closed" class="link-2"></a>
+      <a href="#modal-closed-{{page.slug}}" class="link-2"></a>
   
     </div>
 </div>
