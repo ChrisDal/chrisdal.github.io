@@ -270,9 +270,30 @@
   margin-bottom: $spacing-unit;
 }
 
-/* Arrow Global */
-i {
-  text-decoration: none;
+/* Arrow to top*/
+.to-top-arrow{
+
+  position: relative; 
+  width: 100%;
+
+  i {
+    text-decoration: none;
+    position: absolute; 
+    right: 1px; 
+    bottom: 0px;
+    opacity: 0.8;
+    transform: scale(2.0);
+    color: $grey-color;
+  }
+
+  &:hover i {
+    color: $grey-color-dark;
+    opacity: 0.5;
+    -webkit-transform: scale(2.2);
+    transform: scale(2.2);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+  }
 }
 
 
