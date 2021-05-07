@@ -3,9 +3,13 @@ layout: default
 ---
 
 <div class="home">
+
+  <a id="top-anchor"></a>
+
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
+  
 
   <div>{{ page.sections['intro'] | markdownify }}</div>
 
@@ -38,5 +42,9 @@ layout: default
   </div>
 
   {{ content }}
+
+  <a href="#top-anchor">
+    <i class="far fa-arrow-alt-circle-up" scale=2.0></i>
+  </a>
 
 </div>
