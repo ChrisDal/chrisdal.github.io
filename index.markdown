@@ -21,6 +21,3 @@ sections:
 
 ---
 
-
-[Test Caroussel](./test_caroussel)
-
