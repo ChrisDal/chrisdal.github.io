@@ -1,4 +1,4 @@
-# C++
+# Programming : C++
 Some examples of my projects in C++ from game programmation, to path finding algorithms. 
 
 * * *

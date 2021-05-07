@@ -12,7 +12,7 @@ gh_link: https://github.com/ChrisDal/
 
 __Status__: In progress
 
-All the projects can be found under [C++ project page](./projects_cpp.md)
+All the projects can be found under [C++ project page]({{site.baseurl}}/projects_cpp){:target="_blank" rel="noreferrer noopener"}
 
 1. Foundations
     Project: Build an OpenStreetMap Route Planner

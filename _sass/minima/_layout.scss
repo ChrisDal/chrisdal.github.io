@@ -254,7 +254,11 @@
   }
 }
 
-
+/* Iframe */
+iframe {
+  display: block;
+  margin: 1rem auto; 
+}
 
 
 /* Grid Cards */
@@ -390,6 +394,8 @@
   align-items: center;        /* Group Children in Center (on cross axis) */
   padding: 2px 0;            /* Add padding to the top/bottom */
   border-right: 3px solid #ffffff;
+  height: 100%;
+  width: auto; 
 }
 
 .card-header {
@@ -400,12 +406,17 @@
   @include media-query($on-palm) {
     @include relative-font-size(1.0);
   }
+
+  display: flex;
+  width: auto;
   color: #f7f9ff ;
   text-align: center;
-  writing-mode: sideways-lr; 
+  writing-mode: vertical-lr; 
   text-orientation: sideways;
   padding: 3px 3px;
   word-wrap: break-word;
+  transform: rotate(0.5turn); /* sideways-lr can not be used here */ 
+  
 }
 
 
@@ -464,8 +475,8 @@
   .tags {
     ul {
       display: flex;
-      justify-content: right;    /* Group Children in Center */
-      align-items: right;        /* Group Children in Center (on cross axis) */
+      justify-content: right;    /* Group Children Right */
+      align-items: right;        /* Group Children Right (on cross axis) */
       text-align: right;
       margin-right: 4px;
       

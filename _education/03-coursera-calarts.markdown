@@ -23,8 +23,6 @@ This specialization is composed of 5 courses:
 4. World Design for Video Games
 5. Game Design Document: Define the Art & Concepts
 
-Some example of my work: 
-
 #### Capstone Project
 
 I applied the capstone-project of making a game design document on my project [9Lives](./projects_cpp.md){:target="_blank" rel="noreferrer noopener"}. 
