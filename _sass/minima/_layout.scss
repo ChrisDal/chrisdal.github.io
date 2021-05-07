@@ -275,6 +275,8 @@
 
   position: relative; 
   width: 100%;
+  text-decoration: none;
+
 
   i {
     text-decoration: none;
@@ -286,6 +288,7 @@
     color: $grey-color;
   }
 
+
   &:hover i {
     color: $grey-color-dark;
     opacity: 0.5;
@@ -294,6 +297,7 @@
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
   }
+
 }
 
 
