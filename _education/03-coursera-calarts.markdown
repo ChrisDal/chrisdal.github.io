@@ -1,20 +1,18 @@
 ---
 layout: card_modal
 title:  Online Education
-header: Coursera 
+header: Game Design Fundations
 date:   2021-05-05 14:28:35 +0200
 categories: education
 tags: game design
 modal_title: "Game Design: Art and Concepts par California Institute of the Arts"
-objective: Fundations of Game Design
+objective: Fundations of Game Design on Coursera
 button_name: See Certificate
 gh_name: Coursera
 gh_link: https://coursera.org/verify/specialization/A29S7HHEZ9W9
 ---
 
 __Status__: Finished
-
-[Certificate](https://coursera.org/verify/specialization/A29S7HHEZ9W9){:target="_blank" rel="noreferrer noopener"}
 
 This specialization is composed of 5 courses:
 1. Introduction to Game Design 
@@ -23,7 +21,7 @@ This specialization is composed of 5 courses:
 4. World Design for Video Games
 5. Game Design Document: Define the Art & Concepts
 
-#### Capstone Project
+### Capstone Project
 
 I applied the capstone-project of making a game design document on my project [9Lives](./projects_cpp.md){:target="_blank" rel="noreferrer noopener"}. 
 
