@@ -2,7 +2,7 @@
 layout: card_modal
 title:  Online Education
 header: Coursera 
-date:   2021-05-05 13:28:35 +0200
+date:   2021-05-05 14:28:35 +0200
 categories: education
 tags: game design
 modal_title: "Game Design: Art and Concepts par California Institute of the Arts"

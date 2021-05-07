@@ -2,7 +2,7 @@
 layout: card_modal
 title:  Online Education
 header: Udacity C++ Nanodegree Program
-date:   2021-05-05 13:28:35 +0200
+date:   2021-05-05 14:28:35 +0200
 categories: education
 tags: c++ 
 modal_title: C++ Nanodegree Program
