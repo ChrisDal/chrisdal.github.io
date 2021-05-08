@@ -1,6 +1,6 @@
 ---
 layout: card_modal
-title:  Data Visualization
+title: "Data Visualization"
 header: Hackaviz 2020
 date:   2021-05-05 13:28:35 +0200
 tags: python datascience

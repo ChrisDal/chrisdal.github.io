@@ -254,12 +254,6 @@
   }
 }
 
-/* Iframe */
-iframe {
-  display: block;
-  margin: 1rem auto; 
-}
-
 
 /* Grid Cards */
 .wrapper-grid-card{
@@ -341,7 +335,7 @@ iframe {
     z-index: 5;
     position: absolute;
     right: 4px;
-    top: 2px;
+    top: 4px;
     font-size: 30px;
     cursor: pointer;
   }
@@ -356,7 +350,7 @@ iframe {
 
   button {
     position: absolute;
-    top: 0px;
+    top: 2px;
     right: 4px;
     width: 30px;
     height: 30px;
@@ -392,7 +386,6 @@ iframe {
   flex-direction: column;     /* Rotate Axis to Vertical */
   justify-content: center;    /* Group Children in Center */
   align-items: center;        /* Group Children in Center (on cross axis) */
-  padding: 2px 0;            /* Add padding to the top/bottom */
   border-right: 3px solid #ffffff;
   height: 100%;
   width: auto; 
@@ -456,8 +449,7 @@ iframe {
   display: flex;
   flex-direction: column;
   text-align: right;
-  justify-content: right;    /* Group Children in Center */
-  align-items: right;        /* Group Children in Center (on cross axis) */
+  justify-content: flex-end;    /* Group Children in Center */
   vertical-align: text-bottom;
   position: absolute;
   bottom : 0px;
@@ -475,11 +467,8 @@ iframe {
   .tags {
     ul {
       display: flex;
-      justify-content: right;    /* Group Children Right */
-      align-items: right;        /* Group Children Right (on cross axis) */
-      text-align: right;
+      justify-content: flex-end;    /* Group Children Right */
       margin-right: 4px;
-      
 
       li[tag-type="c++"] {
         background-color : $cpp-color;

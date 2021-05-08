@@ -1,6 +1,6 @@
 ---
 layout: card_modal
-title:  C++
+title: C++
 header: Game Programming 
 date:   2021-05-05 13:28:35 +0200
 tags: game c++

@@ -1,6 +1,6 @@
 ---
 layout: card_modal
-title:  C++
+title: C++
 header: "Udacity Nanodegree: Open Street Map"
 date:   2021-05-05 13:28:35 +0200
 tags: c++

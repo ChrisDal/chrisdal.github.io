@@ -1,6 +1,6 @@
 ---
 layout: card_modal
-title:  Open-Source 
+title: "Open-Source"
 header: LabelImg Participation 
 date:   2021-05-05 13:28:35 +0200
 tags: python
