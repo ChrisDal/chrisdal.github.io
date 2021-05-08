@@ -23,7 +23,7 @@ layout: default
   {%- endfor -%}
   </div>
 
-  <h2> Projects </h2> 
+  <h2> Personnal Projects </h2> 
   <div> {{ page.sections['projects'] | markdownify }} </div>
 
   
@@ -34,11 +34,10 @@ layout: default
   </div>
 
   <h2> Skills </h2> 
-  <div> <ul>
+  <div class="wrapper-grid-card"> 
   {%- for skill in page.sections['others'] -%}
-    <li>{{ skill | markdownify }}</li>
+    {% include {{ skill | downcase | split: " " | join: "" | replace: "+", "p" | prepend: "icon-" | append: ".html"}} %}
   {%- endfor -%}
-  </ul>
   </div>
 
   {{ content }}

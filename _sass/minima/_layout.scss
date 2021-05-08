@@ -254,13 +254,17 @@
   }
 }
 
-
+/* Iframe */
+iframe {
+  display: block;
+  margin: 1rem auto; 
+}
 
 
 /* Grid Cards */
 .wrapper-grid-card{
   display: grid;
-  grid-template-columns: repeat(3, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: 1fr;
   grid-gap: 1rem;
   box-sizing: border-box;
@@ -390,6 +394,8 @@
   align-items: center;        /* Group Children in Center (on cross axis) */
   padding: 2px 0;            /* Add padding to the top/bottom */
   border-right: 3px solid #ffffff;
+  height: 100%;
+  width: auto; 
 }
 
 .card-header {
@@ -400,12 +406,17 @@
   @include media-query($on-palm) {
     @include relative-font-size(1.0);
   }
+
+  display: flex;
+  width: auto;
   color: #f7f9ff ;
   text-align: center;
-  writing-mode: sideways-lr; 
+  writing-mode: vertical-lr; 
   text-orientation: sideways;
   padding: 3px 3px;
   word-wrap: break-word;
+  transform: rotate(0.5turn); /* sideways-lr can not be used here */ 
+  
 }
 
 
@@ -464,8 +475,8 @@
   .tags {
     ul {
       display: flex;
-      justify-content: right;    /* Group Children in Center */
-      align-items: right;        /* Group Children in Center (on cross axis) */
+      justify-content: right;    /* Group Children Right */
+      align-items: right;        /* Group Children Right (on cross axis) */
       text-align: right;
       margin-right: 4px;
       
@@ -652,3 +663,137 @@ Abubaker Saeed  *
   transform: translateY(-.2rem);
   text-decoration: none;
 }
+
+
+
+/* Div Logo Icon */ 
+.logo-icon{
+  display: flex; 
+  flex-direction: row;
+  justify-content: center;
+  width: auto;
+  height: 100px;
+}
+
+/* Caroussel 
+* CodePen Home
+*CSS Variables 3D Carousel (No JS)
+*Chris Neale
+*/
+.carrousel-wrapper {
+  height: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+  position: relative;
+}
+
+input{
+    display: inline-block;
+    margin: 0 auto;
+    position: absolute;
+    left:50%;
+}
+
+
+input:nth-of-type(1) {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  left: calc(50% - 4rem);
+}
+input:nth-of-type(1):checked ~ div.caroussel#main-caroussel {
+  --position: 1;
+}
+
+input:nth-of-type(2) {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+  left: calc(50% - 2rem);
+}
+input:nth-of-type(2):checked ~ div.caroussel#main-caroussel {
+  --position: 2;
+}
+
+input:nth-of-type(3) {
+  grid-column: 4 /5;
+  grid-row: 2 / 3;
+  left: 50%;
+}
+input:nth-of-type(3):checked ~ div.caroussel#main-caroussel {
+  --position: 3;
+}
+
+input:nth-of-type(4) {
+  grid-column: 5 / 6;
+  grid-row: 2 / 3;
+  left: calc(50% + 2rem);
+}
+input:nth-of-type(4):checked ~ div.caroussel#main-caroussel {
+  --position: 4;
+}
+
+input:nth-of-type(5) {
+  grid-column: 6 / 7;
+  grid-row: 2 / 3;
+  left: calc(50% + 4rem);
+}
+input:nth-of-type(5):checked ~ div.caroussel#main-caroussel {
+  --position: 5;
+}
+
+.caroussel#main-caroussel {
+  grid-row: 1 / 2;
+  grid-column: 1 / 8;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 600px;
+  --items: 5;
+  --middle: 3;
+  --position: 1;
+  pointer-events: none;
+}
+
+div.items {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    background-color: coral;
+    --r: calc(var(--position) - var(--offset));
+    --abs: max(calc(var(--r) * -1), var(--r));
+    transition: all 0.25s linear;
+    transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+    z-index: calc((var(--position) - var(--abs)));
+}
+
+div.items:nth-of-type(1) {
+  --offset: 1;
+  background-color: #90f1ef;
+}
+div.items:nth-of-type(2) {
+  --offset: 2;
+  background-color: #ff70a6;
+}
+div.items:nth-of-type(3) {
+  --offset: 3;
+  background-color: #ff9770;
+}
+div.items:nth-of-type(4) {
+  --offset: 4;
+  background-color: #ffd670;
+}
+div.items:nth-of-type(5) {
+  --offset: 5;
+  background-color: #e9ff70;
+}
+
+
+
+

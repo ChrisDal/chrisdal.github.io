@@ -15,8 +15,9 @@ sections:
   - C++ 
   - Python 
   - Matlab 
-  - Bash 
-  - Deep Learning 
+  - MsOffice 
+  - Gitlab
+  - Gitlab
 
 ---
 
