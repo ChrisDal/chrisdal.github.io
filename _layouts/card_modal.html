@@ -1,0 +1,65 @@
+---
+layout: nav_cards
+---
+
+<div class="card">
+
+  <div class="card-left">
+    <div class="card-header">{{page.title}}</div>
+  </div>
+
+  <div class="card-main">
+    
+    <div class="card-content">
+      <h1>{{ page.header }}</h1>
+      <p>  </p>
+    </div>
+
+    {%- if page.tags -%}
+    <div class="container_tags"> 
+      <span> tags </span>
+      <div class="tags">
+        <ul>
+
+        {%- for tag in page.tags -%}
+            <li tag-type="{{tag}}">{{ tag }}</li>
+        {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    {%- endif -%}
+  </div>
+  
+  <a href="#modal-opened-{{page.slug}}" class="link-1" id="modal-closed-{{page.slug}}">
+    <button></button>
+    <i class="far fa-arrow-alt-circle-right"></i>
+  </a>
+
+</div>
+
+<div class="modal-container" id="modal-opened-{{page.slug}}">
+    <div class="modal">
+  
+      <div class="modal__details">
+        <h1 class="modal__title">{{ page.modal_title }}</h1>
+        <p class="modal__description">{{ page.objective }}</p>
+      </div>
+  
+      <p class="modal__text">
+          {{ content }}
+      </p>
+      
+      {%- if page.gh_link -%}
+      <a href={{ page.gh_link }} target="_blank" rel="noreferrer noopener" >
+        {%- if page.gh_name -%}
+        <button class="modal__btn">See on {{ page.gh_name }} &rarr;</button>
+        {%- else -%}
+        <button class="modal__btn">See on Github &rarr;</button>
+        {%- endif -%}
+      </a>
+      {%- endif -%}
+  
+      <a href="#modal-closed-{{page.slug}}" class="link-2"></a>
+  
+    </div>
+</div>

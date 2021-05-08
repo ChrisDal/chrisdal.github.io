@@ -27,7 +27,14 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chrisdal.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 github_username:  ChrisDal
-linkedin_username: Maëva DALILA
+linkedin_username: maevadalila
+
+# Add author 
+author : Maëva DALILA
+
+# New inputs added 
+copyright: ChrisDAL 
+
 #
 # Build settings
 #
@@ -38,7 +45,26 @@ plugins:
 # For instance, to only link to the about and the portfolio page, add the following to your _config.yml:
 header_pages:
   - about.markdown
-  - portfolio.markdown
+  - contact.md
+
+collections:
+  education:
+    output: true
+  progprojects:
+    output: true
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "education"
+    values:
+      layout: "card_modal"
+  - scope:
+      path: ""
+      type: "progprojects"
+    values:
+      layout: "card_modal"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

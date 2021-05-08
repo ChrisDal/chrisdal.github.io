@@ -16,7 +16,7 @@ Main Courses were :
 
 ### Deep Learning Intern 
 
-Construction Machineries Recognition on aerial images for [Delair](https://delair.aero). 
+Construction Machineries Recognition on aerial images for [Delair](https://delair.aero){:target="_blank" rel="noreferrer noopener"}. 
 
 Technologies: Tensorflow, Python
 

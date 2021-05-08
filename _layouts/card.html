@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<div class="card">
+  <div class="card-left">
+  
+    <div class="card-header">{{page.title}}</div>
+  </div>
+  
+
+  
+  <div class="card-main">
+    
+    <div class="card-content">
+      {{ content }}
+    </div>
+    {%- if page.tags -%}
+    <div class="container_tags"> 
+      <span> tags </span>
+      <div class="tags">
+        <ul>
+
+        {%- for tag in page.tags -%}
+            <li>{{ tag }}</li>
+        {%- endfor -%}
+        </ul>
+      </div>
+    </div>
+    {%- endif -%}
+ 
+  </div>
+
+  <a href="#modal-opened" class="link-1" id="modal-closed">
+    <button></button>
+    <i class="far fa-arrow-alt-circle-right"></i>
+  </a>
+
+</div>

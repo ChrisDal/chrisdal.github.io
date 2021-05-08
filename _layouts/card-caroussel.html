@@ -1,0 +1,22 @@
+---
+layout: page
+---
+
+{{ content }}
+
+<div class="caroussel-wrapper">
+
+    <input type="radio" name="position" checked />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+    <input type="radio" name="position" />
+
+    <div class="caroussel" id="main-caroussel">
+        <div class="items"> <img src={{site.baseurl}}/images/{{page.pictures[0]}} alt={{ page.descr[0] }}> </div>
+        <div class="items"> <img src={{site.baseurl}}/images/{{page.pictures[1]}} alt={{ page.descr[1] }}> </div>
+        <div class="items"> <img src={{site.baseurl}}/images/{{page.pictures[2]}} alt={{ page.descr[2] }}> </div>
+        <div class="items"> <img src={{site.baseurl}}/images/{{page.pictures[3]}} alt={{ page.descr[3] }}> </div>
+        <div class="items"> <img src={{site.baseurl}}/images/{{page.pictures[4]}} alt={{ page.descr[4] }}> </div>
+    </div>
+</div>
