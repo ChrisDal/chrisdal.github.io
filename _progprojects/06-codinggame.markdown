@@ -1,6 +1,6 @@
 ---
 layout: card_modal
-title:  Coding Game
+title: "Coding Game"
 header: Algorithms Challenge
 date:   2021-05-05 13:28:35 +0200
 tags: python c++
