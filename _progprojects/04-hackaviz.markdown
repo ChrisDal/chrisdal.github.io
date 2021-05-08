@@ -4,7 +4,6 @@ title:  Data Visualization
 header: Hackaviz 2020
 date:   2021-05-05 13:28:35 +0200
 tags: python datascience
-refersto: /pages/card-test.md
 modal_title: Hackaviz 2020 
 objective: Analyze data of tourism in Occitanie (France) in a limited time
 gh_name: Website

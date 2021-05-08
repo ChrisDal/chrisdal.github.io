@@ -1,10 +1,9 @@
 ---
 layout: card_modal
-title:  Open-Source Participation 
-header: LabelImg
+title:  Open-Source 
+header: LabelImg Participation 
 date:   2021-05-05 13:28:35 +0200
 tags: python
-refersto: /pages/card-test.md
 modal_title: LabelImg
 objective: Labeling Data for Neural-Network
 gh_link: https://github.com/tzutalin/labelImg/pull/80

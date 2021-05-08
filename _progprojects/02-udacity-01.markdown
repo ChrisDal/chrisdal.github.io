@@ -4,7 +4,6 @@ title:  C++
 header: "Udacity Nanodegree: System Monitor"
 date:   2021-05-05 13:28:35 +0200
 tags: c++
-refersto: /pages/card-test.md
 modal_title: System Monitor
 objective: Monitoring a Linux System
 gh_link: https://github.com/ChrisDal/CppND-System-Monitor-Project-Updated
