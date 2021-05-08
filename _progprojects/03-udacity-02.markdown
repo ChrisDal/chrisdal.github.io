@@ -13,3 +13,5 @@ gh_link: https://github.com/ChrisDal/CppND-Route-Planning-Project/tree/master/sr
 __Competence__: Path Finding 
 
 Implement A search algorithm in order to naviguate into an open street map. 
+
+![OSM Image]({{site.baseurl}}/images/OSM_toulouse_MDC.png "Algorithm on OpenStreetMap Toulouse")
