@@ -17,7 +17,6 @@ sections:
   - Matlab 
   - MsOffice 
   - Gitlab
-  - Gitlab
-
+  - Bash
 ---
 
