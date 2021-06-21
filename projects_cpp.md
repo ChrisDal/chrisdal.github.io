@@ -58,4 +58,4 @@ __Objective__: Modify the structure of the code use smart pointers
 
 __Competence__: Smart Pointers and Ownership
 
-Code on Github 
+[Code on Github](https://github.com/ChrisDal/CppND-Memory-Management-Chatbot){:target="_blank" rel="noreferrer noopener"}
