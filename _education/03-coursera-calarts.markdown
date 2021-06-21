@@ -23,6 +23,6 @@ This specialization is composed of 5 courses:
 
 ### Capstone Project
 
-I applied the capstone-project of making a game design document on my project [9Lives](./projects_cpp.md){:target="_blank" rel="noreferrer noopener"}. 
+I applied the capstone-project of making a game design document on my project [9Lives](https://www.youtube.com/watch?v=CzjvAaKCj9I){:target="_blank" rel="noreferrer noopener"}. 
 
 Results can be found on these slides: [Game Design Document](https://drive.google.com/file/d/1O0Ac06Ke82EVLZGDs-N7JoixQQ94ngwD/view?usp=sharing){:target="_blank" rel="noreferrer noopener"}
