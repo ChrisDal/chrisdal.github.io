@@ -16,7 +16,7 @@ descr:
  - "VuesurleVercors"
 ---
 
-Based in Auvergne-Rhône-Alpes, I love hiking and motion design (not at the same time). 
+Based in France, I love hiking and motion design (not at the same time). 
 
 
 
