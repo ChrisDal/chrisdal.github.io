@@ -22,7 +22,7 @@
 title: Maëva DALILA
 email: see@contact section
 description: >- # this means to ignore newlines until "baseurl:"
-  Engineer in Signal and Image Processing, Game Programmer.
+  Game Programming Student, Engineer in Signal and Image Processing.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chrisdal.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
