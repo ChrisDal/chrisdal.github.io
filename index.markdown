@@ -5,9 +5,9 @@
 layout: home
 sections:
   intro: |
-   Based in France, I am a signal and image processing engineer. I love programming so you will find here some selection of my work. My current programming languages are Python and C++.
+   Based in France, I am a signal and image processing engineer. I love programming so you will find here some selection of my work. My current programming languages are C++, Python and C#.
   education: |
-    I graduated from INP-ENSEEIHT in 2017, in Electronics and Signal Processing, specialized in Signal and Image Processing. 
+    I graduated from INP-ENSEEIHT in 2017, in Electronics and Signal Processing, specialized in Signal and Image Processing. I am currently enrolled in a Master's degree (M2) in Informatics specialized in Game Programming, Computer Graphics and IA. 
   projects: |
     An overview of the personal projects I have worked on:  
 
