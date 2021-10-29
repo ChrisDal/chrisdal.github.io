@@ -26,13 +26,9 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  overflow-y: auto;
 }
 
-/* Avoid Scrolling Bar when modal is opened */ 
-body.modal-container-open body.modal-open {
-  overflow-y: hidden;
-	
-}
 
 
 /**
