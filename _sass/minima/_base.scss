@@ -28,6 +28,11 @@ body {
   flex-direction: column;
 }
 
+/* Avoid Scrolling Bar when modal is opened */ 
+body.modal-container-open body.modal-open {
+  overflow-y: hidden;
+	
+}
 
 
 /**

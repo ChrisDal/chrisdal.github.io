@@ -481,6 +481,10 @@
       li[tag-type="datascience"] {
         background-color: $grey-color-dark;
       }
+	  
+	  li[tag-type="game"] {
+        background-color: $game-color;
+      }
 
       li {
         @include relative-font-size(0.65);
@@ -514,6 +518,11 @@
 CSS Modal (using :target)
 Abubaker Saeed  *
 */
+
+
+
+
+
 .modal-container {
   position: fixed;
   top: 0;
@@ -528,6 +537,8 @@ Abubaker Saeed  *
   height: 100%;
 
   background: $background-color;
+  overflow-x : hidden; 
+  overflow-y: auto;
   
 }
 
@@ -548,6 +559,12 @@ Abubaker Saeed  *
   background: linear-gradient(to right bottom, hsl(237, 93%, 84%), hsl(195, 89%, 72%));
   box-shadow: .4rem .4rem 2.4rem .2rem hsla(236, 50%, 50%, 0.3);
   position: relative;
+  
+  
+}
+
+body.modal-open {
+  overflow-y: hidden;
 }
 
 .modal__details {
@@ -613,7 +630,10 @@ Abubaker Saeed  *
 .modal__btn:focus {
   border-color: hsla(0, 0%, 100%, .6);
   transform: translateY(-.2rem);
+  background: hsla(240,60%,90%,0.5);
 }
+
+
 
 
 /* Links 
@@ -650,6 +670,7 @@ Abubaker Saeed  *
   border-color: hsla(0, 0%, 100%, .6);
   transform: translateY(-.2rem);
   text-decoration: none;
+  background: hsla(240,60%,90%,0.5);
 }
 
 
