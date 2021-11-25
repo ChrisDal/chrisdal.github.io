@@ -2,7 +2,7 @@
 layout: card_modal
 title:  Education
 header: Computer Sciences UNI
-date:   2021-10-14 21:00:55 +0200
+date:   2021-11-25 21:00:00 +0200
 categories: education
 tags: game informatics c++
 modal_title:  Montpellier University

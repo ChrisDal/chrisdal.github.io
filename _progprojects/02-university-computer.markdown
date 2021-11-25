@@ -11,5 +11,7 @@ gh_link: https://github.com/ChrisDal/IGraphic-IMAGINE
 
 __Competence__: Mathematics, C++ 
 
+Go through some computer graphics projects on my github or on the [Some Projects]({{site.baseurl}}/someprojects) section. 
+
 ![Surface Image]({{site.baseurl}}/images/06.PNG "Result Image")
 ![Recalage Image]({{site.baseurl}}/images/03.PNG "Result Image")

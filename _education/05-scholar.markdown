@@ -2,7 +2,7 @@
 layout: card_modal
 title:  Education
 header: Engineering School
-date:   2021-05-05 13:28:35 +0200
+date:   2021-11-25 21:45:00 +0200
 categories: education
 tags: image signal
 modal_title: INP-ENSEEIHT (Toulouse)
