@@ -45,6 +45,7 @@ plugins:
 # For instance, to only link to the about and the portfolio page, add the following to your _config.yml:
 header_pages:
   - about.markdown
+  - someprojects.md
   - contact.md
 
 collections:
